@@ -1,4 +1,4 @@
-# **ACCOUNT INFORMATION**
+# **Account Information**
 #### User Identity Login
 ```gcloud auth login```
 #### Service Account Login
@@ -22,7 +22,7 @@
 #### Clone repo to home dir
 ```gcloud source repos clone <repo_name>```
 
-# **VIRTUAL MACHINES**
+# **Virtual Machines**
 #### List compute instances
 ```gcloud compute instances list```
 #### Give Shell Access to instance
@@ -34,7 +34,7 @@
 #### Use Google keyring to decrypt encrypted data
 ```gcloud kms decrypt --ciphertext-file=encrypted-file.enc --plaintext-file=out.txt --key <crypto-key> --keyring <crypto-keyring> --location global```
 
-# **STORAGE**
+# **Storage**
 #### List Google Storage buckets
 ```gsutil ls```
 
@@ -44,7 +44,7 @@
 #### Copy item from bucket
 ```gsutil cp gs://bucketid/item ~/```
 
-# **WEBAPPS AND SQL**
+# **WebApps and SQL**
 #### List WebApps
 ```gcloud app instances list```
 
@@ -66,7 +66,7 @@ First, copy buckets to the local directory
 ```gsutil acl ch -u <service account> gs://<googlestoragename>```
 ```gcloud sql export sql <sql instance name> gs://<googlestoragename>/sqldump.gz --database=<database name>```
 
-# **NETWORKING**
+# **Networking**
 #### List networks
 ```gcloud compute networks list```
 
@@ -79,7 +79,7 @@ First, copy buckets to the local directory
 #### List Interconnects (VPN)
 ```gcloud compute interconnects list```
 
-# **CONTAINERS**
+# **Containers**
 #### List existing containers in cluster
 ```gcloud container clusters list```
 
@@ -88,7 +88,7 @@ First, copy buckets to the local directory
 #### If successful and the user has the correct permission the Kubernetes command below can be used to get cluster-info
 ```kubectl cluster-info```
 
-# **SERVERLESS**
+# **Serverless**
 #### GCP functions log analysis – May get useful information from logs associated with GCP functions
 ```gcloud functions list```
 ```gcloud functions describe <function name>```
