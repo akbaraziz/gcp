@@ -17,7 +17,7 @@
 ```gcloud config set project <project name>```
 #### Gives a list of all APIs that are enabled in a project
 ```gcloud services list```
-#### Get source code repos available to user
+#### Get source code repos available to the user
 ```gcloud source repos list```
 #### Clone repo to home dir
 ```gcloud source repos clone <repo_name>```
@@ -30,7 +30,7 @@
 #### Puts public ssh key onto metadata service for project
 ```gcloud compute ssh <local host>```
 #### Get access scopes if on an instance
-```curl http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/default/scopes -H 'Metadata-Flavor:Google’``````
+```curl http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/default/scopes -H 'Metadata-Flavor:Google’```
 #### Use Google keyring to decrypt encrypted data
 ```gcloud kms decrypt --ciphertext-file=encrypted-file.enc --plaintext-file=out.txt --key <crypto-key> --keyring <crypto-keyring> --location global```
 
@@ -81,11 +81,11 @@ First, copy buckets to the local directory
 
 # **CONTAINERS**
 #### List existing containers in cluster
-gcloud container clusters list
+```gcloud container clusters list```
 
 #### To get GCP Kubernetes config file ~/.kube/config gets generated when you are authenticated with gcloud and run
 ```gcloud container clusters get-credentials <cluster name> --region <region>```
-#### If successful and the user has the correct permission the Kubernetes command below can be used to get cluster info
+#### If successful and the user has the correct permission the Kubernetes command below can be used to get cluster-info
 ```kubectl cluster-info```
 
 # **SERVERLESS**
