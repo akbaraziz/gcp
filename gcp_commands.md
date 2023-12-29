@@ -1,25 +1,25 @@
 # **ACCOUNT INFORMATION**
 #### - User Identity Login
-> ```gcloud auth login```
-### Service Account Login
+```gcloud auth login```
+#### Service Account Login
 ```gcloud auth activate-service-account --key-file creds.json```
-### List Accounts Available to gcloud
+#### List Accounts Available to gcloud
 ```gcloud auth list```
-### List Organizations
+#### List Organizations
 ```gcloud organizations list```
-### Enumerate IAM Policies set ORG-Wide
+#### Enumerate IAM Policies set ORG-Wide
 ```gcloud organizations get-iam-policy <org ID>```
-### Enumerate IAM Policies set per project
+#### Enumerate IAM Policies set per project
 ```gcloud projects get-iam-policy <project ID>```
-### List Projects
+#### List Projects
 ```gcloud projects list```
-### Change or Set a different project
+#### Change or Set a different project
 ```gcloud config set project <project name>```
-### Gives a list of all APIs that are enabled in a project
+#### Gives a list of all APIs that are enabled in a project
 ```gcloud services list```
-### Get source code repos available to user
+#### Get source code repos available to user
 ```gcloud source repos list```
-### Clone repo to home dir
+#### Clone repo to home dir
 ```gcloud source repos clone <repo_name>```
 
 **# VIRTUAL MACHINES**
