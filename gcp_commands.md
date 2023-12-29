@@ -1,5 +1,4 @@
 # __ACCOUNT INFORMATION__
----
 ## User Identity Login
 ```gcloud auth login```
 ## Service Account Login
