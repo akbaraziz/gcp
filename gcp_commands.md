@@ -1,6 +1,6 @@
 # **ACCOUNT INFORMATION**
-#### User Identity Login
-```gcloud auth login```
+#### - User Identity Login
+> ```gcloud auth login```
 ### Service Account Login
 ```gcloud auth activate-service-account --key-file creds.json```
 ### List Accounts Available to gcloud
