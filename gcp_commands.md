@@ -1,60 +1,42 @@
-# ACCOUNT INFORMATION
+**# ACCOUNT INFORMATION**
 ---
 ## User Identity Login
 ```gcloud auth login```
-
 ## Service Account Login
 ```gcloud auth activate-service-account --key-file creds.json```
-
 ## List Accounts Available to gcloud
 ```gcloud auth list```
-
 ## List Organizations
 ```gcloud organizations list```
-
 ## Enumerate IAM Policies set ORG-Wide
 ```gcloud organizations get-iam-policy <org ID>```
-
 ## Enumerate IAM Policies set per project
 ```gcloud projects get-iam-policy <project ID>```
-
 ## List Projects
 ```gcloud projects list```
-
 ## Change or Set a different project
 ```gcloud config set project <project name>```
-
 ## Gives a list of all APIs that are enabled in a project
 ```gcloud services list```
-
 ## Get source code repos available to user
 ```gcloud source repos list```
-
 ## Clone repo to home dir
 ```gcloud source repos clone <repo_name>```
 
-
-
-# VIRTUAL MACHINES
+**# VIRTUAL MACHINES**
 ---
 ## List compute instances
 ```gcloud compute instances list```
-
 ## Give Shell Access to instance
 ```gcloud beta compute ssh --zone "<region>" "<instance name>" --project "<project name>"```
-
 ## Puts public ssh key onto metadata service for project
 ```gcloud compute ssh <local host>```
-
 ## Get access scopes if on an instance
 ```curl http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/default/scopes -H 'Metadata-Flavor:Google’``````
-
 ## Use Google keyring to decrypt encrypted data
 ```gcloud kms decrypt --ciphertext-file=encrypted-file.enc --plaintext-file=out.txt --key <crypto-key> --keyring <crypto-keyring> --location global```
 
-
-
-#STORAGE
+**#STORAGE**
 ---
 ## List Google Storage buckets
 ```gsutil ls```
