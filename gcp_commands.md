@@ -1,4 +1,5 @@
 # ACCOUNT INFORMATION
+---
 ## User Identity Login
 ```gcloud auth login```
 
@@ -35,6 +36,7 @@
 
 
 # VIRTUAL MACHINES
+---
 ## List compute instances
 ```gcloud compute instances list```
 
@@ -53,6 +55,7 @@
 
 
 #STORAGE
+---
 ## List Google Storage buckets
 ```gsutil ls```
 
@@ -62,7 +65,10 @@
 ## Copy item from bucket
 ```gsutil cp gs://bucketid/item ~/```
 
+
+
 # WEBAPPS AND SQL
+---
 ## List WebApps
 ```gcloud app instances list```
 
@@ -87,6 +93,7 @@ First copy buckets to local directory
 
 
 # NETWORKING
+---
 ## List networks
 ```gcloud compute networks list```
 
@@ -102,6 +109,7 @@ First copy buckets to local directory
 
 
 # CONTAINERS
+---
 ## List existing containers in cluster
 gcloud container clusters list
 
@@ -113,6 +121,7 @@ gcloud container clusters list
 
 
 # SERVERLESS
+---
 ## GCP functions log analysis – May get useful information from logs associated with GCP functions
 ```gcloud functions list```
 ```gcloud functions describe <function name>```
