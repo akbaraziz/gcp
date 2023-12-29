@@ -80,7 +80,6 @@ First, copy buckets to the local directory
 ```gcloud compute interconnects list```
 
 # **CONTAINERS**
----
 #### List existing containers in cluster
 gcloud container clusters list
 
