@@ -32,6 +32,8 @@
 ## Clone repo to home dir
 ```gcloud source repos clone <repo_name>```
 
+
+
 # VIRTUAL MACHINES
 ## List compute instances
 ```gcloud compute instances list```
@@ -47,6 +49,8 @@
 
 ## Use Google keyring to decrypt encrypted data
 ```gcloud kms decrypt --ciphertext-file=encrypted-file.enc --plaintext-file=out.txt --key <crypto-key> --keyring <crypto-keyring> --location global```
+
+
 
 #STORAGE
 ## List Google Storage buckets
@@ -80,6 +84,8 @@ First copy buckets to local directory
 ```gsutil acl ch -u <service account> gs://<googlestoragename>```
 ```gcloud sql export sql <sql instance name> gs://<googlestoragename>/sqldump.gz --database=<database name>```
 
+
+
 # NETWORKING
 ## List networks
 ```gcloud compute networks list```
@@ -93,6 +99,8 @@ First copy buckets to local directory
 ## List Interconnects (VPN)
 ```gcloud compute interconnects list```
 
+
+
 # CONTAINERS
 ## List existing containers in cluster
 gcloud container clusters list
@@ -101,6 +109,8 @@ gcloud container clusters list
 ```gcloud container clusters get-credentials <cluster name> --region <region>```
 ## If successful and the user has the correct permission the Kubernetes command below can be used to get cluster info
 ```kubectl cluster-info```
+
+
 
 # SERVERLESS
 ## GCP functions log analysis – May get useful information from logs associated with GCP functions
